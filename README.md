@@ -7,7 +7,7 @@ Provided releases:
 
 Installation:
 - Apple Silicon:
-  - Download the release marked for arm64 Apple silicon. You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
+  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for arm64 Apple silicon. You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
   - Before launching the app, you'll need to codesign it. In terminal navigate to the extracted files, and run the following:
  
     `codesign --force --deep --sign - EternalJK.arm64.app`
@@ -17,7 +17,11 @@ Installation:
     `xattr -d com.apple.quarantine EternalJK.arm64.app`
 
 - Windows 64-bit:
-  - Download the release marked for Windows x86_64. You can extract the files into an existing EtenralJK directory & overwrite dll's/japro-assets.pk3/etc, or create a new directory for this install, add a /base folder and add your asset files. 
+  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for Windows x86_64. You can extract the files into an existing EtenralJK directory & overwrite dll's/japro-assets.pk3/etc, or create a new directory for this install, add a /base folder and add your asset files. 
+
+
+
+
 
 
 
