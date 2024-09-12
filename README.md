@@ -5,8 +5,26 @@ Provided releases:
 - ARM Apple silicon 
 - 64bit Windows
 
+Installation:
+- Apple Silicon:
+  - Download the release marked for arm64 Apple silicon. You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
+  - Before launching the app, you'll need to codesign it. In terminal navigate to the extracted files, and run the following:
+ 
+    `codesign --force --deep --sign - EternalJK.arm64.app`
+
+    If you attempted to open the file before codesigning, you may need to remove the quarantine Apple has placed on it, followed by running the above codesign step:
+	
+    `xattr -d com.apple.quarantine EternalJK.arm64.app`
+
+- Windows 64-bit:
+  - Download the release marked for Windows x86_64. You can extract the files into an existing EtenralJK directory & overwrite dll's/japro-assets.pk3/etc, or create a new directory for this install, add a /base folder and add your asset files. 
+
+
+
 ---
+
 # Sunnys Readme:
+
 ---
 
 # EternalJK - Vulkan API
