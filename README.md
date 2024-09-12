@@ -12,7 +12,7 @@ Installation:
  
     `codesign --force --deep --sign - EternalJK.arm64.app`
 
-    If you attempted to open the file before codesigning, you may need to remove the quarantine Apple has placed on it, followed by running the above codesign step:
+    If you attempted to open the file before codesigning, you may need to remove the quarantine MacOS has placed on it, followed by running the above codesign step:
 	
     `xattr -d com.apple.quarantine EternalJK.arm64.app`
 
