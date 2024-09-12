@@ -17,7 +17,7 @@ Installation:
     `xattr -d com.apple.quarantine EternalJK.arm64.app`
 
 - Windows 64-bit:
-  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for Windows x86_64. You can extract the files into an existing EtenralJK directory & overwrite dll's/japro-assets.pk3/etc, or create a new directory for this install, add a /base folder and add your asset files. 
+  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for Windows x86_64. You can extract the files into an existing EternalJK directory & overwrite dll's/japro-assets.pk3/etc, or create a new directory for this install, add a /base folder and add your asset files. 
 
 
 
