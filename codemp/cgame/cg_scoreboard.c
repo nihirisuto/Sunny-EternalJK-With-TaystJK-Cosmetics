@@ -437,6 +437,20 @@ qboolean CG_DrawOldScoreboard( void ) {
 		CG_Text_Paint ( x - CG_Text_Width ( s, 1.0f, FONT_MEDIUM ) / 2, y, 1.0f, colorWhite, s, 0, 0, ITEM_TEXTSTYLE_OUTLINED, FONT_MEDIUM );
 	}
 
+    if(cg_scoreboardTime.integer) {
+        char numberStr[MAX_SAY_TEXT] = {0};
+        struct tm *newtime;
+        qboolean AM = qtrue;
+        time_t rawtime;
+        time(&rawtime);
+        newtime = localtime(&rawtime);
+        if (newtime->tm_hour >= 12) AM = qfalse;
+        if (newtime->tm_hour > 12) newtime->tm_hour -= 12;
+        if (newtime->tm_hour == 0) newtime->tm_hour = 12;
+        Com_sprintf(numberStr, sizeof(numberStr), "%i:%02i %s", newtime->tm_hour, newtime->tm_min, AM ? "AM" : "PM");
+        CG_Text_Paint(SB_NAME_X, y, 0.6f, colorWhite, numberStr, 0, 0, ITEM_TEXTSTYLE_OUTLINED, FONT_SMALL);
+    }
+
 	// current rank
 	if (cgs.gametype == GT_POWERDUEL)
 	{ //do nothing?
