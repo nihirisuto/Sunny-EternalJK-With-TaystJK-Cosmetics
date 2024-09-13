@@ -1,12 +1,19 @@
 
 This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/EternalJK), with the implementation of /cosmetics from TaystJK. Other then that, it's just your standard EternalJK. Sunny's fork was used because he provided updated cmakelists & build scripts to compile for Apple Silicon. This includes a recent JAPro asset bundle, the cJSON lib, and some copy and paste jiujitsu of Tayst's work. This provides the ability to use /cosmetics on non-JAPro servers (Base, JAPlus, etc). Because you're missing out when you don't see TiW with his Ugnaught afro and a goose on his shoulder. 
 
-Provided releases:
+![Stay Strapped](image.png)
+
+---
+
+# Provided releases:
+
 - ARM Apple silicon 
 - 64bit Windows
 - 64bit Linux
 
-Installation:
+---
+
+# Installation:
 - Apple Silicon:
   - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for arm64 Apple silicon. You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
   - Before launching the app, you'll need to codesign it. In terminal navigate to the extracted files, and run the following:
