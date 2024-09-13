@@ -4,6 +4,7 @@ This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/Etern
 Provided releases:
 - ARM Apple silicon 
 - 64bit Windows
+- 64bit Linux
 
 Installation:
 - Apple Silicon:
