@@ -25,7 +25,7 @@ type make >/dev/null 2>&1 || {
 }
 
 use_internal_libs="yes"
-read -r -p "Would you like to use internal libraries? (yes/no) [default: yes] " response
+read -r -p "Would you like to use the bundled libraries included in the source (hopefully no need to install dependencies)? (yes/no) [default: yes] " response
 response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
 if [ "$response" = "n" ] || [ "$response" = "no" ]; then
     use_internal_libs="no"
