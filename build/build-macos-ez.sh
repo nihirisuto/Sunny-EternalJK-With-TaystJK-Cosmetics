@@ -12,26 +12,23 @@ type cmake >/dev/null 2>&1 || {
     fi
 }
 
-BUILD_DIR="$(uname)-$(uname -m)"
-rm -rf "$BUILD_DIR"
-mkdir "$BUILD_DIR"
-cd "$BUILD_DIR" || exit 1
-
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../..
-
-if [ -z "$1" ]; then
-    make
-else
-    make -j"$1"
+use_internal_libs="yes"
+read -r -p "Would you like to use internal libraries? (yes/no) [default: yes] " response
+response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
+if [ "$response" = "n" ] || [ "$response" = "no" ]; then
+    use_internal_libs="no"
 fi
 
-
 BUILD_DIR="$(uname)-$(uname -m)"
 rm -rf "$BUILD_DIR"
 mkdir "$BUILD_DIR"
 cd "$BUILD_DIR" || exit 1
 
-cmake -G "Unix Makefiles" ../..
+if [ "$use_internal_libs" = "yes" ]; then
+    cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DUseInternalLibs=ON ../..
+else
+    cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../..
+fi
 
 if [ -z "$1" ]; then
     make

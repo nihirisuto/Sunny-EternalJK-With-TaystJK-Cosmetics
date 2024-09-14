@@ -1,3 +1,14 @@
+# Ignore build output folders
+build/eternaljk-mac_arm64/
+build/eternaljk-linux_x86_64/
+build/eternaljk-windows_x86_64/
+
+# Ignore the potentially compressed .zip release files in those build folders
+build/eternaljk-mac_arm64.zip
+build/eternaljk-linux_x86_64.zip
+build/eternaljk-windows_x86_64.zip
+
+
 #################
 ## Eclipse
 #################
