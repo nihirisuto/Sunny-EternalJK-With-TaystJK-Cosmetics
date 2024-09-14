@@ -3,13 +3,28 @@
 type cmake >/dev/null 2>&1 || {
     echo "Can't find cmake. Would you like to install it using Homebrew? (yes/no)"
     read -r response
-    if [ "$response" = "yes" ]; then
+    response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
+    if [ "$response" = "y" ] || [ "$response" = "ye" ] || [ "$response" = "yes" ]; then
         brew install cmake
     else
         echo "Cmake is required for compile (rek)."
         exit 1
     fi
 }
+
+BUILD_DIR="$(uname)-$(uname -m)"
+rm -rf "$BUILD_DIR"
+mkdir "$BUILD_DIR"
+cd "$BUILD_DIR" || exit 1
+
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../..
+
+if [ -z "$1" ]; then
+    make
+else
+    make -j"$1"
+fi
+
 
 BUILD_DIR="$(uname)-$(uname -m)"
 rm -rf "$BUILD_DIR"
