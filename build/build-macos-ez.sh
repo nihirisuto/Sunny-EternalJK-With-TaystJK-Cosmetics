@@ -12,6 +12,18 @@ type cmake >/dev/null 2>&1 || {
     fi
 }
 
+type make >/dev/null 2>&1 || {
+    echo "Can't find "make". Would you like to install it by installing Xcode Command Line Tools? (yes/no)"
+    read -r response
+    response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
+    if [ "$response" = "y" ] || [ "$response" = "ye" ] || [ "$response" = "yes" ]; then
+        xcode-select --install
+    else
+        echo "make is required for compile."
+        exit 1
+    fi
+}
+
 use_internal_libs="yes"
 read -r -p "Would you like to use internal libraries? (yes/no) [default: yes] " response
 response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
