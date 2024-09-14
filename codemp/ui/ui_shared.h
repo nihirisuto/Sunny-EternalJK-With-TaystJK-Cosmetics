@@ -600,7 +600,7 @@ static char *baseModelList[] = {
 	//"jedi_rm",
 	//"jedi_tf",
 	//"jedi_zf",
-	"jeditrainer"
+	"jeditrainer",
 	"kyle",
 	"lando",
 	"luke",
@@ -629,6 +629,7 @@ static char *baseModelList[] = {
 	"tusken",
 	"ugnaught",
 	"weequay",
+	"blank"
 };
 static const int BASE_MODEL_COUNT = ARRAY_LEN(baseModelList);
 
@@ -638,7 +639,8 @@ static char *baseSpeciesList[] = {
 	"jedi_kdm",
 	"jedi_rm",
 	"jedi_tf",
-	"jedi_zf"
+	"jedi_zf",
+	"blank"
 };
 static const int BASE_SPECIES_COUNT = ARRAY_LEN(baseSpeciesList);
 
@@ -658,7 +660,8 @@ static char *baseHiltList[] = {
 	"dual_2",
 	"dual_3",
 	"dual_4",
-	"dual_5"
+	"dual_5",
+	"blank"
 };
 static const int BASE_HILT_COUNT = ARRAY_LEN(baseHiltList);
 #endif

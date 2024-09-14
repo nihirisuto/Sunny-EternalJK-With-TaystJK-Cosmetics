@@ -100,8 +100,11 @@ along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 //#define MIN_IMAGE_ALIGN				( 128 * 1024 )
 
-#define VERTEX_BUFFER_SIZE				( 4 * 1024 * 1024 )
-#define VERTEX_CHUNK_SIZE				( 768 * 1024)
+// #define VERTEX_BUFFER_SIZE				( 4 * 1024 * 1024 )
+// #define VERTEX_CHUNK_SIZE				( 768 * 1024)
+
+#define IMAGE_CHUNK_SIZE                ( 64 * 1024 * 1024 )
+#define MAX_IMAGE_CHUNKS                96
 
 #define XYZ_SIZE						( 4 * VERTEX_CHUNK_SIZE )
 #define COLOR_SIZE						( 1 * VERTEX_CHUNK_SIZE )
