@@ -13,7 +13,7 @@ type cmake >/dev/null 2>&1 || {
 }
 
 type make >/dev/null 2>&1 || {
-    echo "Can't find "make". Would you like to install it by installing Xcode Command Line Tools? (yes/no)"
+    echo "Can't find make. Would you like to install it by installing Xcode Command Line Tools? (yes/no)"
     read -r response
     response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
     if [ "$response" = "y" ] || [ "$response" = "ye" ] || [ "$response" = "yes" ]; then
