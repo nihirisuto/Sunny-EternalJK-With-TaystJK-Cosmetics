@@ -14,8 +14,8 @@ This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/Etern
 ---
 
 # Installation:
-- Apple Silicon:
-  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for arm64 Apple silicon. You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
+- MacOS Apple Silicon:
+  - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for MacOS arm64 (Apple Silicon). You can extract the files into an existing EternalJK directory & overwrite japro-assets.pk3 & the dylibs, or create a new directory for this install, add a /base folder and add your asset files.
   - Before launching the app, you'll need to codesign it. In terminal navigate to the extracted files, and run the following:
  
     `codesign --force --deep --sign - EternalJK.arm64.app`
@@ -29,6 +29,6 @@ This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/Etern
 
 - . @P2 (Linux):
   - Download the [release](https://github.com/nihirisuto/Sunny-EternalJK-With-TaystJK-Cosmetics/releases/tag/naisu) marked for Linux x86_64. Add a /base folder with your assets into the extracted directory. 
-  - Navigate to the extracted dir. In terminal (or if you're gnomin it or something right click eternaljk.x86_64` > properties > check to allow to run as an executable)
+  - Navigate to the extracted dir. In terminal (or if you're gnomin it or something right click **eternaljk.x86_64** > properties > check to allow to run as an executable)
   
     `chmod +x eternaljk.x86_64`
