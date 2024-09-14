@@ -193,5 +193,4 @@ compile_commands.json
 #############
 ## CMake Builds
 #############
-#[Bb]uild*/
 cmake-build-*
