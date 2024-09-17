@@ -1,5 +1,5 @@
 
-This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/EternalJK), with the implementation of /cosmetics from TaystJK. Other then that, it's just your standard EternalJK. Sunny's fork was used because he provided updated cmakelists & build scripts to compile for Apple Silicon. This includes a recent JAPro asset bundle, the cJSON lib, and some copy and paste jiujitsu of Tayst's work. This provides the ability to use /cosmetics on non-JAPro servers (Base, JAPlus, etc). Because you're missing out when you don't see TiW with his Ugnaught afro and a goose on his shoulder. 
+This is literally just [Sunny's EternalJK fork](https://github.com/JKSunny/EternalJK) (Sunny added vulkan api and updated makefiles), with the implementation of /cosmetics from TaystJK. Other then that, it's just your standard EternalJK. Sunny's fork was used because he provided updated cmakelists & build scripts to compile for Apple Silicon. This includes a recent JAPro asset bundle, the cJSON lib, and some copy and paste jiujitsu of Tayst's work. This provides the ability to use /cosmetics on non-JAPro servers (Base, JAPlus, etc). Because you're missing out when you don't see TiW with his Ugnaught afro and a goose on his shoulder. 
 
 ![Stay Strapped](image.png)
 
